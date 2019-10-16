@@ -6,7 +6,7 @@
 
 * [General](#general)
 * [How The Game Works](#how-the-game-works)
-* [Demo] (#the-demo)
+* [The Demo](#the-demo)
 * [Resources](#resources)
 
 ## General
