@@ -6,6 +6,15 @@ let textArea = document.querySelector("#textArea");
 const modalBox = document.querySelector(".modal-box");
 const text = document.querySelector(".text");
 
+const scoreX = document.querySelector(".playerX");
+const scoreO = document.querySelector(".playerO");
+const scoreTie = document.querySelector(".tie");
+countScoreX=1;
+countScoreO=1;
+countScoreTie=1;
+
+let audio = new Audio("audio/woohoo.mp3");
+let audio1 = new Audio("audio/lose.wav");
 
 const startGame = function(){
 if(playerTurn === true){
@@ -30,17 +39,23 @@ for(let i=0 ; i<gameBoard.length ; i++){
 
 const whoWon = function(){
     if(playerTurn == true){
-        console.log("pppp");
+        console.log("entered");
+        audio.play();
         text.innerHTML+="<p>O is the winner</p>";
+        scoreO.innerText=countScoreO++;
     }
     else if(playerTurn == false){
-        
+        console.log("entered");
+        audio.play();
         text.innerHTML+="<p>X is the winner</p>";
-    }
+        scoreX.innerHTML=countScoreX++;}
+        
+
+    
     
  //remove every event listener
 for(let i=0 ; i<gameBoard.length ; i++){
-    gameBoard[i].removeEventListener("click", startGame)}
+    gameBoard[i].removeEventListener("click", startGame);}
 
 }
 
@@ -130,7 +145,11 @@ const winner = function(){
             modalBox.style.display = 'block'; 
         }
         else if(count==9){
-        textArea.innerText="It's a tie";}
+        textArea.innerText="It's a tie";
+        scoreTie.innerHTML=countScoreTie++;
+        audio1.play();
+
+    }
 
         }
 
@@ -146,6 +165,21 @@ for(let i=0 ; i<gameBoard.length ; i++){
     modalBox.style.display = "none"; 
     text.innerText="";
     gameBoard[i].addEventListener("click", startGame);
+}}
+
+const ResetScore = function(){
+    for(let i=0 ; i<gameBoard.length ; i++){
+        gameBoard[i].innerText="";
+        gameBoard[i].style.background=" #ffffff url('image.png')";
+        scoreX.innerText=0;
+        countScoreX= 1;
+        scoreO.innerText=0;
+        countScoreO= 1;
+        scoreTie.innerText=0;
+        countScoreTie= 1;
+
+
+        gameBoard[i].addEventListener("click", startGame);
 }}
 
 

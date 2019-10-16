@@ -21,13 +21,14 @@ h1 {
 #scoreboard {
     margin-top: 2px;
     margin-bottom: 6px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .score {
     position: relative;
     display: inline-block;
-    font-family: font;
 
 }
 
@@ -41,14 +42,17 @@ h1 {
 }
 
 .playerX, .playerO, .tie {
+   
     border: 5px solid white;
     border-radius: 5px;
     margin: 0 auto;
     width: 50px;
     height: 50px;
-    font-size: 400%;
-    color: white;  
+    font-size: 18px;
+    color: grey;  
     margin-left:20px;
+    font-weight: bold;
+
 } 
 
 #gameboard { 
@@ -74,7 +78,6 @@ h1 {
 }
 
 .row {
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
