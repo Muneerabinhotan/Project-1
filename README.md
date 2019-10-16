@@ -21,6 +21,6 @@ General Assembly Software Engineering Immersive
 
 
 ## Resources
-* View Demo[ViewDemo] (https://muneerabinhotan.github.io/Tic-Tac-Toe-Game/)
+* [![View The Demo] (https://muneerabinhotan.github.io/Tic-Tac-Toe-Game/)
 * Font [fontsquirrel](https://www.fontsquirrel.com/fonts/list/find_fonts/400?filter%5Blicense%5D%5B0%5D=web).
 * Audio's from [fontawesome](https://freesound.org/).
