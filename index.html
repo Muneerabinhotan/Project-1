@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tic Tac Toe Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+ </head>
+
+
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <header id="scoreboard">
+         <div class="score">
+            <p class="scoreText">X</p>
+            <div class="playerX"></div>
+        </div>
+           
+        <div class="score">
+            <p class="scoreText">O</p>
+            <div class="playerO"></div>
+        </div>
+            
+        <div class="score">
+            <p class="scoreText">Tie</p>
+            <div class="tie"></div>
+        </div>
+    </header>
+
+    <section id="game-board">
+        <div class="row">
+            <button id="textArea"></button> </div>
+
+        <div class="row">
+             <div id="0" class="cell"></div>
+            <div id="1" class="cell"></div>
+            <div id="2" class="cell"></div>
+        </div>          
+        
+        <div class="row">
+             <div id="3" class="cell"></div>
+            <div id="4" class="cell"></div>
+            <div id="5" class="cell"></div>         
+        </div>
+
+        <div class="row">
+            <div id="6" class="cell"></div>
+            <div id="7" class="cell"></div>
+            <div id="8" class="cell"></div>
+        </div>
+      
+        <div class="buttons">    
+            <button id="newGame" onclick="newGame()">New Game</button>
+            <button id="resetScore">Reset Score</button> 
+        </div>
+    </section>
+
+  
+            <div class="modal-box">
+                <h2>Congratulations</h2>
+
+                <div class="text"></div>
+          
+                <button id="modal-restart" onclick="newGame()">Restart Game</button>
+            </div>
+
+    <script src="app.js"></script>
+     
+    </body>
+    
+    </html>

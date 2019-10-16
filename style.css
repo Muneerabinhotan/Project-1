@@ -1,0 +1,135 @@
+@font-face{
+    font-family: font;
+    src: url(fonts/Furore/Furore.otf);
+}
+
+body {
+    font-size: 10px;
+    text-align: center;
+    font-family: font;
+    background: #ffffff url('image.png');
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 7em;
+    margin-bottom: -2px;
+}
+
+#scoreboard {
+    margin-top: 2px;
+    margin-bottom: 6px;
+    
+}
+
+.score {
+    position: relative;
+    display: inline-block;
+    font-family: font;
+
+}
+
+.scoreText{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: white;
+    margin-left:20px;
+
+}
+
+.playerX, .playerO, .tie {
+    border: 5px solid white;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    font-size: 400%;
+    color: white;  
+    margin-left:20px;
+} 
+
+#gameboard { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.cell {
+    border: 5px solid white;
+    border-radius: 5px;
+    margin: 4px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 500%;
+    color: white;
+}
+
+.row {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newGame, #resetScore {
+    width: 150px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 150%;
+    color: grey;
+    display: inline-block;
+    font-family: font;
+}
+
+#textArea{
+    width: 300px;
+    height: 50px;
+    border: 5px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 150%;
+    text-align: center;
+    font-size: 150%;
+    color: white;
+   font-family: font;
+   background: #ffffff url('image.png'); }
+
+
+ #newGame:hover , #resetScore:hover {
+    background-color: grey;
+    color: white;
+}
+
+p{
+    color:black;
+}
+
+.modal-box {
+    position: fixed;
+    background-color: #fff;
+    top: 40%;
+    width: 500px;
+    padding: 50px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 40px #e3e1e1;
+    z-index: 1;
+    display: none;
+    color: black;
+
+}
+
+
