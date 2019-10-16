@@ -1,3 +1,4 @@
+/* Add font-family */
 @font-face{
     font-family: font;
     src: url(fonts/Furore/Furore.otf);
@@ -7,7 +8,7 @@ body {
     font-size: 10px;
     text-align: center;
     font-family: font;
-    background: #ffffff url('image.png');
+    background: #ffffff url("image.png");
     color: black;
 }
 
@@ -18,29 +19,30 @@ h1 {
     margin-bottom: -2px;
 }
 
+/* the scoreboard */
 #scoreboard {
     margin-top: 2px;
     margin-bottom: 6px;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
+/* to be shown inline */
 .score {
     position: relative;
     display: inline-block;
-
 }
 
+/*  the names */
 .scoreText{
     text-align: center;
     margin-bottom: 5px;
     font-size: 15px;
     color: white;
     margin-left:20px;
-
 }
 
+/* the score's boxes */
 .playerX, .playerO, .tie {
    
     border: 5px solid white;
@@ -52,16 +54,22 @@ h1 {
     color: grey;  
     margin-left:20px;
     font-weight: bold;
-
 } 
 
+/* gameboard */
 #gameboard { 
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;   
+     
 }
 
+/* the rows */
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+/* each cell */
 .cell {
     border: 5px solid white;
     border-radius: 5px;
@@ -77,12 +85,7 @@ h1 {
     color: white;
 }
 
-.row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/* the twi buttons  */
 #newGame, #resetScore {
     width: 150px;
     height: 40px;
@@ -96,6 +99,7 @@ h1 {
     font-family: font;
 }
 
+/* the turns */
 #textArea{
     width: 300px;
     height: 50px;
@@ -107,19 +111,20 @@ h1 {
     text-align: center;
     font-size: 150%;
     color: white;
-   font-family: font;
-   background: #ffffff url('image.png'); }
-
+    font-family: font;
+    background: #ffffff url('image.png'); }
 
  #newGame:hover , #resetScore:hover {
     background-color: grey;
     color: white;
 }
 
+/* the added text to the modal */
 p{
     color:black;
 }
 
+/* modal box */
 .modal-box {
     position: fixed;
     background-color: #fff;
@@ -129,10 +134,9 @@ p{
     text-align: center;
     border-radius: 5px;
     box-shadow: 1px 1px 40px #e3e1e1;
-    z-index: 1;
     display: none;
     color: black;
-
+    margin: 0 auto;
 }
 
 
