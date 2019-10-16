@@ -19,8 +19,8 @@ General Assembly Software Engineering Immersive
 * The players can reset the score.
 * The players can reset the game.
 
+* View The Demo: (https://muneerabinhotan.github.io/Tic-Tac-Toe-Game/)
 
 ## Resources
-* ![View The Demo] (https://muneerabinhotan.github.io/Tic-Tac-Toe-Game/)
 * Font [fontsquirrel](https://www.fontsquirrel.com/fonts/list/find_fonts/400?filter%5Blicense%5D%5B0%5D=web).
 * Audio's from [fontawesome](https://freesound.org/).
