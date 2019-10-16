@@ -6,6 +6,7 @@
 
 * [General](#general)
 * [How The Game Works](#how-the-game-works)
+* [Demo] (#the-demo)
 * [Resources](#resources)
 
 ## General
@@ -19,8 +20,11 @@ General Assembly Software Engineering Immersive
 * The players can reset the score.
 * The players can reset the game.
 
+## The Demo
+
 * View The Demo: (https://muneerabinhotan.github.io/Tic-Tac-Toe-Game/)
 
 ## Resources
+
 * Font [fontsquirrel](https://www.fontsquirrel.com/fonts/list/find_fonts/400?filter%5Blicense%5D%5B0%5D=web).
 * Audio's from [fontawesome](https://freesound.org/).
